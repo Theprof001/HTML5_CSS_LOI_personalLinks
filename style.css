@@ -1,0 +1,57 @@
+body {
+        text-decoration: none;
+        color: darkgreen;
+        background-color: rgb(128, 128, 128);
+        font: bold 1.5rem 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+body h1 {
+    text-decoration: underline silver 3px;
+    color: limegreen;
+    text-align: center;
+    border: 5px dotted darkblue;
+}
+.video-container { 
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#vid1, #vid2, #vid3 {
+    border: solid 2px black; 
+    padding: 5px 0 15px 0;
+    margin: 5px;
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    resize: both;
+}
+#music1 {
+    text-align: center;
+    margin-top: 2px;
+    background-color: lime;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: darkgreen;
+    font: bold 1.5rem 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.resizable {
+    overflow: hidden;
+    resize: both;
+}
+.draggable {
+    position: absolute;
+    z-index: 100;
+}
+.draggable-handler {
+    cursor: pointer;
+}
+.dragging {
+    cursor: move;
+    z-index: 200 !important
+}
